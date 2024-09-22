@@ -12,6 +12,10 @@
     url("../fonts/Yekan.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1091,4 +1095,54 @@ header .navbar .social button:hover {
 
 header .navbar .menu > ul > .close-icon {
   display: none;
+}
+
+.to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  background: #b71c1c;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #000;
+  opacity: 0;
+  transition: a11 0.4s ease-in;
+  -webkit-transition: a11 0.4s ease-in;
+  -moz-transition: a11 0.4s ease-in;
+  -ms-transition: a11 0.4s ease-in;
+  -o-transition: a11 0.4s ease-in;
+}
+
+.to-top.scroll-top {
+  opacity: 1;
+  bottom: 30px;
+}
+
+.to-top svg {
+  font-size: 20px;
+}
+
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   background: #fff;
+   z-index: 999;
+}
+
+.hidePreloader{
+  display: none !important;
 }

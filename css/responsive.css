@@ -195,6 +195,17 @@
     width: 13%;
     padding: 70px 0;
   }
+
+  .to-top {
+    position: fixed;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .to-top svg {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -293,6 +304,17 @@
     width: 50%;
     margin-top: 40px;
   }
+
+  .to-top {
+    position: fixed;
+    right: 5px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .to-top svg {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -327,6 +349,17 @@
   .best-selling-child .child-item {
     width: 42%;
     margin-top: 10px;
+  }
+
+  .to-top {
+    position: fixed;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .to-top svg {
+    font-size: 13px;
   }
 }
 

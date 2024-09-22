@@ -91,3 +91,17 @@ hamburger.addEventListener("click", () => {
   navbarList.classList.add("show-navbar");
   navbarList.classList.remove("hide-navbar");
 });
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    toTop.classList.add("scroll-top");
+  } else {
+    toTop.classList.remove("scroll-top");
+  }
+});
+
+window.addEventListener("load", () => {
+  document.querySelector(".preloader").classList.add("hidePreloader");
+});
